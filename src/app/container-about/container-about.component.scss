@@ -3,7 +3,6 @@ $green: #3a5f56;
 .parent {
   width: 100%;
   overflow: hidden;
-  background-color: #f4f3f0;
   position: relative;
   .content {
     display: flex;
@@ -41,7 +40,8 @@ $green: #3a5f56;
     width: 600px;
     height: 600px;
     position: absolute;
-    left: -150px;
-    bottom: -150px;
+    left: -180px;
+    bottom: -236px;
+    z-index: -1;
   }
 }
