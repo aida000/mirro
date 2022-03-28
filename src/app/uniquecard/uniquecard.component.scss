@@ -1,0 +1,31 @@
+.uniqueCard {
+  display: flex;
+  gap: 37px;
+  text-align: center;
+  font-family: system-ui;
+  padding: 46px 51px;
+  img {
+    border-radius: 10px;
+  }
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 39px;
+    font-weight: 500;
+    margin-bottom: 23px;
+    text-shadow: 4px 1px black;
+    color: #acc1e1;
+  }
+  p {
+    text-align: justify;
+  }
+  ul {
+    text-align: left;
+    list-style-type: circle;
+    padding: 0 23px;
+    font-size: 14px;
+  }
+}

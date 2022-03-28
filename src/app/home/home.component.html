@@ -1,0 +1,17 @@
+<div class='section'>
+    <div class='card-box' *ngFor="let e of arr" [style.backgroundImage]="'url('+ e.img +')'">
+        <div class='card-text' >
+            <div class='title'>{{e.cardTitle}}</div>
+            <div class='text'>{{e.text}}</div>
+        </div>
+        <div class='info'>
+            <div class='descrip'>{{e.descrip}}</div>
+            <button class='btn' (click)="click(e.id)">Find More</button>
+        </div>
+    </div>
+  
+  
+  
+  
+</div>
+

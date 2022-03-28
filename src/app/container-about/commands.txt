@@ -1,0 +1,2 @@
+Delete folder with Terminal
+rm -rf folder-i anuny

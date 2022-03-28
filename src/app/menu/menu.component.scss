@@ -1,0 +1,48 @@
+$white: #ffffff;
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  background: $white;
+  box-shadow: 0 0 11px 0 grey;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  padding: 0 20px;
+  background-color: white;
+
+  .logo {
+    width: 113px;
+    height: 30px;
+    img {
+      object-fit: cover;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    li {
+      padding: 20px;
+      a {
+        text-decoration: none;
+        font-size: 19px;
+        font-family: monospace;
+        text-transform: uppercase;
+        color: unset;
+        letter-spacing: 1px;
+          transition:   0.5s;
+        
+        &:hover {
+          font-weight: bold;
+          transition:   0.5s;
+          cursor: pointer;
+          
+        }
+      }
+    }
+  }
+}

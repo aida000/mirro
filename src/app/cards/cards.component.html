@@ -1,0 +1,17 @@
+<div class="par">
+    <div class="container">
+        <div *ngFor="let item of arr" class="card">
+            <div class="img">
+                <div class="overlay"><button class="btn">view property</button></div>
+            </div>
+            <div class="description" (click)="see(item.id)">
+                <p class="title">{{item.name}}</p>
+                <p class="text">{{item.text}}</p>
+                <p class="price">{{item.price}}</p>
+            </div>
+          </div>
+     
+        </div>
+    </div>
+
+  
