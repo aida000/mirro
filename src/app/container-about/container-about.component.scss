@@ -31,17 +31,5 @@ $green: #3a5f56;
       }
     }
   }
-  .red {
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(58, 95, 86, 0.55) 0%,
-      rgba(58, 95, 86, 0) 100%
-    );
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    left: -180px;
-    bottom: -236px;
-    z-index: -1;
-  }
+
 }

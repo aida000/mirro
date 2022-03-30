@@ -6,6 +6,8 @@
   padding: 46px 51px;
   img {
     border-radius: 10px;
+    width: 25rem;
+    height: 15rem;
   }
   & > div {
     display: flex;
@@ -13,7 +15,7 @@
     justify-content: space-between;
   }
   .title {
-    font-size: 39px;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 23px;
     text-shadow: 4px 1px black;
@@ -21,11 +23,20 @@
   }
   p {
     text-align: justify;
+    font-size:0.8rem ;
   }
   ul {
     text-align: left;
     list-style-type: circle;
     padding: 0 23px;
-    font-size: 14px;
+    font-size: 0.8rem;
   }
+}
+
+
+@media (max-width: 900px){
+  .uniqueCard{
+    flex-direction: column;
+  }
+
 }

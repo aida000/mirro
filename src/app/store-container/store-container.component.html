@@ -1,0 +1,18 @@
+<app-container-about [item]="title"></app-container-about>
+<div class="parent">
+  <div class="content">
+    <div *ngFor="let i of arr" class="cards">
+      <img src="{{ i.img }}" />
+      <div class="padding"> 
+        <div class="title">{{ i.cardTitle }}</div>
+        <div class="text">{{ i.text }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="seeMore">
+    <a href="">Preset store</a><mat-icon>trending_flat</mat-icon>
+  </div>
+  <div class="red"></div>
+</div>
+
+<app-footer></app-footer>

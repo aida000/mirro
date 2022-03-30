@@ -1,0 +1,59 @@
+.parent {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  box-sizing: border-box;
+  margin-top: 200px;
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+    height: 259px;
+    margin: 0 auto;
+    height: 200px;
+    background: #f4f3f0;
+    border-radius: 16px;
+    & > div:first-child {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 34px;
+      width: 257px;
+    }
+    button {
+      border-radius: 6px;
+      background-color: #3a5f56;
+      padding: 12px 0;
+      width: 12%;
+      color: white;
+    }
+  }
+
+  .red {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(184, 125, 88, 0.35) 0%,
+      rgba(184, 125, 88, 0) 100%
+    );
+    width: 802px;
+    height: 417px;
+    position: absolute;
+    left: 107px;
+    bottom: -164px;
+  }
+}
+
+@media (max-width: 900px) {
+  .parent {
+    & > div {
+      flex-direction: column;
+      width: 80%;
+      button {
+        width: 49%;
+      }
+    }
+  }
+}

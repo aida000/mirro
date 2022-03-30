@@ -13,6 +13,9 @@ import { UniquecardComponent } from './uniquecard/uniquecard.component';
 import { HomeComponent } from './home/home.component';
 import { ContainerAboutComponent } from './container-about/container-about.component';
 import { AboutCardComponent } from './about-card/about-card.component';
+import { StoreContainerComponent } from './store-container/store-container.component';
+import { FooterComponent } from './footer/footer.component';
+import { FooterSearchComponent } from './footer-search/footer-search.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { AboutCardComponent } from './about-card/about-card.component';
     HomeComponent,
     ContainerAboutComponent,
     AboutCardComponent,
+    StoreContainerComponent,
+    FooterComponent,
+    FooterSearchComponent,
   ],
   imports: [
     BrowserModule,
