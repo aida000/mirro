@@ -1,0 +1,81 @@
+$green: #3a5f56;
+
+.parent {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .content {
+    color: #3a5f56;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .cards {
+      background: #f4f3f0;
+      box-shadow: 0px 3px 15px rgb(0 0 0 / 3%);
+      border-bottom-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 438px;
+      width: 360px;
+
+      .padding {
+        padding: 25px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .title {
+        font-family: "Source Serif Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+      }
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+  .seeMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 38px;
+
+    a {
+      text-decoration: none;
+      color: $green;
+    }
+  }
+  .red {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(219, 52, 59, 0.296) 0%,
+      rgba(219, 52, 59, 0) 100%
+    );
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: -156px;
+    bottom: -173px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 990px) {
+  .parent {
+    .content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

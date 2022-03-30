@@ -8,6 +8,7 @@ $text: #ee8a1e;
   justify-content: center;
   gap: 43px;
   margin-top: 24px;
+  flex-wrap: wrap;
 
   .card-box {
     overflow: hidden;
@@ -24,8 +25,11 @@ $text: #ee8a1e;
     .card-text {
       color: white;
       text-align: center;
-      font-family: $anton;
-      padding: 7px 5px;
+      font-family: "Anton", sans-serif;
+      padding: 15px 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
 
       .title {
         font-size: 35px;

@@ -1,4 +1,19 @@
-<div *ngFor="let i of arr">
-    <div>{{i.cardTitle}}</div>
-    <div>{{i.text}}</div>
+<div class="parent">
+  <div class="content">
+  <div *ngFor="let i of arr" class="cards">
+    <div class="icon">
+      <mat-icon>{{ i.icon }}</mat-icon>
+    </div>
+    <div class="title">{{ i.cardTitle }}</div>
+    <div class="text">{{ i.text }}</div>
+    <div class="seeMore">
+      <a href="">See More</a>
+      <div>
+
+        <mat-icon class="arrow">trending_flat</mat-icon>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="red"></div>
 </div>

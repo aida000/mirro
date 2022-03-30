@@ -1,0 +1,14 @@
+.parent {
+  background: black;
+  text-align: center;
+  padding-top: 100px;
+  .content {
+    color: #3a5f56;
+    max-width: 1110px;
+    margin: 50px auto;
+    gap: 72px;
+    iframe{
+      border-radius: 30px;
+    }
+  }
+}

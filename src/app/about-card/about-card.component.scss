@@ -1,0 +1,83 @@
+$green: #3a5f56;
+
+.parent {
+  position: relative;
+  .content {
+    color: #3a5f56;
+    gap: 15px;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: grid;
+    padding: 14px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+
+    .cards {
+      background: #f4f3f0;
+      box-shadow: 0px 3px 15px rgb(0 0 0 / 3%);
+      border-radius: 16px;
+      padding: 23px 47px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(58, 95, 86, 0.1);
+        border-radius: 50%;
+      }
+      .title {
+        font-family: "Source Serif Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+      }
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .seeMore {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        a {
+          text-decoration: none;
+          color: $green;
+        }
+   
+      }
+    }
+  }
+  .red {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(58, 95, 86, 0.55) 0%,
+      rgba(58, 95, 86, 0) 100%
+    );
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: -180px;
+    bottom: -236px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 900px) {
+  .parent {
+    .content {
+      grid-template-columns: 1fr;
+
+   
+    }
+  }
+}

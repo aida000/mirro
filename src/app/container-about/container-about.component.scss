@@ -3,7 +3,6 @@ $green: #3a5f56;
 .parent {
   width: 100%;
   overflow: hidden;
-  background-color: #f4f3f0;
   position: relative;
   .content {
     display: flex;
@@ -32,16 +31,5 @@ $green: #3a5f56;
       }
     }
   }
-  .red {
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(58, 95, 86, 0.55) 0%,
-      rgba(58, 95, 86, 0) 100%
-    );
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    left: -150px;
-    bottom: -150px;
-  }
+
 }
